@@ -1,0 +1,74 @@
+/* boton card perfil */
+.button_perfil {
+    border-radius: 7px;
+    width: 130px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    /*font-family: 'Times New Roman', Times, serif;*/
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s;
+    z-index: 1;
+}
+.button_perfil::before {
+    border-radius: 7px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: white;
+    z-index: -1;
+    transition: all 0.5s;
+}
+.button_perfil:hover::before {
+    width: 100%;
+}
+.button_perfil:hover {
+    color: black;
+}
+.button_perfil:active:before {
+    background: #b9b9b9;
+}
+
+/* boton back */
+.container .button_back {
+    color: #c70202;
+    border-radius: 9px;
+    position: relative;
+    background: none;
+    border: solid 3px #c70202;
+    transition: linear 250ms;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+.container .button_back:is(:hover,:focus) {
+    color: #fff;
+}
+.container .button_back::after {
+    border-radius: 5px;
+    position: absolute;
+    content: '';
+    inset: 0;
+    z-index: -1;
+    background-color: #c70202;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: linear 250ms;
+}
+.container .button_back:is(:hover, :focus)::after {
+    transform: scale(1);
+}

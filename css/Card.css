@@ -1,0 +1,351 @@
+/* name, descripcion */
+.container .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* animacion */
+    -webkit-animation: scale-up-center 1.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 1.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+/* animacion */
+@-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+}
+@keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+}
+.text h1{
+    color: rgb(199, 198, 198);
+    margin-top: 60px;
+    font-size: 45px;
+}
+.text p {
+    color: rgb(136, 134, 134);
+    margin-top: -10px;
+}
+
+/* botones redes */
+/* 1eros */
+.primeros {
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* boton mail */
+.primeros .mail {
+    border: 0;
+    background-image: linear-gradient(150deg, rgb(5, 199, 248), rgb(41, 41, 247));
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 9px;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* animacion */
+    -webkit-animation: bounce-top 1s 1s both;
+	        animation: bounce-top 1s 1s both;
+}
+.mail span {
+    background-color: transparent;
+    padding: 10px 15px;
+    border-radius: 100px;
+    transition: .3s;
+    font-size: 2.1em;
+}
+.mail:hover span {
+    -webkit-text-fill-color: white;
+    background-image: linear-gradient(150deg, rgb(5, 199, 248), rgb(41, 41, 247));
+}
+.mail:active {
+    transform: scale(0.9);
+}
+/* boton GH */
+.primeros .GH {
+    border: 0;
+    background-image: linear-gradient(150deg, rgb(172, 169, 169), rgb(70, 69, 69));
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 9px;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* animacion */
+    -webkit-animation: bounce-top 1s 1s both;
+	        animation: bounce-top 1s 1s both;
+}
+.GH span {
+    background-color: transparent;
+    padding: 10px 15px;
+    border-radius: 100px;
+    transition: .3s;
+    font-size: 2.1em;
+}
+.GH:hover span {
+    -webkit-text-fill-color: white;
+    background-image: linear-gradient(150deg, rgb(90, 89, 89), rgb(39, 38, 38));
+}
+.GH:active {
+    transform: scale(0.9);
+}
+
+/* 2dos */
+.segundos {
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* boton instagram */
+.segundos .IG {
+    border: 0;
+    background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 9px;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* animacion */
+    -webkit-animation: bounce-top 1s 1s both;
+	        animation: bounce-top 1s 1s both;
+}
+.IG span {
+    background-color: transparent;
+    padding: 10px 15px;
+    border-radius: 100px;
+    transition: .3s;
+    font-size: 2.1em;
+}
+.IG:hover span {
+    -webkit-text-fill-color: white;
+    background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+.IG:active {
+    transform: scale(0.9);
+}
+/* boton twitter */
+.segundos .TW {
+    border: 0;
+    background-image: linear-gradient(45deg, #66757F, #00ACEE, #0bceff, #bcdff7);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 9px;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* animacion */
+    -webkit-animation: bounce-top 1s 1s both;
+	        animation: bounce-top 1s 1s both;
+}
+.TW span {
+    background-color: transparent;
+    padding: 10px 15px;
+    border-radius: 100px;
+    transition: .3s;
+    font-size: 2.1em;
+}
+.TW:hover span {
+    -webkit-text-fill-color: white;
+    background-image: linear-gradient(45deg, #66757F, #00ACEE, #0bceff, #bcdff7);
+}
+.TW:active {
+    transform: scale(0.9);
+}
+
+/* 3ero */
+.tercero {
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* boton CV */
+.tercero .CV {
+    border: 0;
+    background-image: linear-gradient(150deg, rgb(66, 248, 112), rgb(10, 221, 21), rgb(7, 196, 16), rgb(214, 209, 209));
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 9px;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* animacion */
+    -webkit-animation: bounce-top 1s 1s both;
+	        animation: bounce-top 1s 1s both;
+}
+.CV span {
+    background-color: transparent;
+    padding: 10px 15px;
+    border-radius: 100px;
+    transition: .3s;
+    font-size: 2.1em;
+}
+.CV:hover span {
+    -webkit-text-fill-color: white;
+    background-image: linear-gradient(150deg, rgb(31, 236, 82), rgb(10, 221, 21), rgb(1, 124, 7), rgb(214, 209, 209));
+}
+.CV:active {
+    transform: scale(0.9);
+}
+/* animacion */
+@-webkit-keyframes bounce-top {
+    0% {
+      -webkit-transform: translateY(-45px);
+              transform: translateY(-45px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 1;
+    }
+    24% {
+      opacity: 1;
+    }
+    40% {
+      -webkit-transform: translateY(-24px);
+              transform: translateY(-24px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    65% {
+      -webkit-transform: translateY(-12px);
+              transform: translateY(-12px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    82% {
+      -webkit-transform: translateY(-6px);
+              transform: translateY(-6px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    93% {
+      -webkit-transform: translateY(-4px);
+              transform: translateY(-4px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+}
+@keyframes bounce-top {
+    0% {
+      -webkit-transform: translateY(-45px);
+              transform: translateY(-45px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 1;
+    }
+    24% {
+      opacity: 1;
+    }
+    40% {
+      -webkit-transform: translateY(-24px);
+              transform: translateY(-24px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    65% {
+      -webkit-transform: translateY(-12px);
+              transform: translateY(-12px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    82% {
+      -webkit-transform: translateY(-6px);
+              transform: translateY(-6px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    93% {
+      -webkit-transform: translateY(-4px);
+              transform: translateY(-4px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+}
+
+/* responsive */
+@media (max-width: 700px) {
+    .container {
+        padding: 5px;
+        margin: 2px;
+        margin-top: 120px;
+    }
+}

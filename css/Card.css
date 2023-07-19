@@ -193,8 +193,8 @@
     transform: scale(0.9);
 }
 
-/* 3ero */
-.tercero {
+/* 3eros */
+.terceros {
     position: relative;
     margin-top: 10px;
     display: flex;
@@ -202,7 +202,7 @@
     justify-content: center;
 }
 /* boton CV */
-.tercero .CV {
+.terceros .CV {
     border: 0;
     background-image: linear-gradient(150deg, rgb(66, 248, 112), rgb(10, 221, 21), rgb(7, 196, 16), rgb(214, 209, 209));
     -webkit-background-clip: text;
@@ -233,6 +233,40 @@
     background-image: linear-gradient(150deg, rgb(31, 236, 82), rgb(10, 221, 21), rgb(1, 124, 7), rgb(214, 209, 209));
 }
 .CV:active {
+    transform: scale(0.9);
+}
+/* boton linkedin */
+.terceros .LK {
+    border: 0;
+    background-image: linear-gradient(150deg, rgb(5, 199, 248), rgb(41, 41, 247));
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 9px;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* animacion */
+    -webkit-animation: bounce-top 1s 1s both;
+	        animation: bounce-top 1s 1s both;
+}
+.LK span {
+    background-color: transparent;
+    padding: 10px 15px;
+    border-radius: 100px;
+    transition: .3s;
+    font-size: 2.1em;
+}
+.LK:hover span {
+    -webkit-text-fill-color: white;
+    background-image: linear-gradient(150deg, rgb(5, 199, 248), rgb(41, 41, 247));
+}
+.LK:active {
     transform: scale(0.9);
 }
 /* animacion */
